@@ -222,6 +222,7 @@
   font-style: italic;
   font-display: swap;
 }
+
 html,
 body {
   font-size: 62.5%;
@@ -408,12 +409,6 @@ body {
   margin-right: 2rem;
 }
 
-.hero__link:hover {
-  color: #5540bf;
-  background-color: #ffffff;
-  cursor: pointer;
-}
-
 .hero__buttons {
   margin-bottom: 3.5rem;
 }
@@ -421,7 +416,7 @@ body {
 .hero__subtext {
   font-weight: normal;
   font-size: 1.4rem;
-  line-height: 1.8rem;
+  line-height: 129%;
   max-width: 44rem;
 }
 
@@ -471,16 +466,27 @@ body {
   line-height: 138%;
 }
 
+@media (min-width: 48em) {
+  .hero__link:hover {
+    color: #5540bf;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+}
+
 /* Mobile */
 @media (max-width: 48em) {
   html {
     font-size: 10px;
   }
 
+  .wrapper {
+    padding-bottom: 8rem;
+  }
+
   .container {
     width: 100%;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding: 0 3rem;
   }
 
   .header {
@@ -507,51 +513,41 @@ body {
 
   .hero__header {
     font-size: 3rem;
+    line-height: 130%;
   }
 
   .hero__text {
-    width: 47.5%;
-  }
-
-  .hero__description {
-    font-family: "Open Sans", sans-serif;
-    font-weight: normal;
-    font-size: 2rem;
-    line-height: 140%;
-    margin-bottom: 6.5rem;
-    max-width: 48rem;
+    width: 100%;
   }
 
   .hero__link {
-    font-weight: 600;
-    font-size: 1.2rem;
-    line-height: 125%;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    border: 0.1rem solid #ffffff;
-    border-radius: 0.5rem;
-    padding: 1.7rem 4.1rem;
+    display: block;
+    text-align: center;
   }
 
   .hero__link:first-child {
-    margin-right: 2rem;
-  }
-
-  .hero__link:hover {
-    color: #5540bf;
-    background-color: #ffffff;
-    cursor: pointer;
-  }
-
-  .hero__buttons {
-    margin-bottom: 3.5rem;
+    margin-right: 0rem;
+    margin-bottom: 2rem;
   }
 
   .hero__subtext {
-    font-weight: normal;
+    line-height: 140%;
+  }
+
+  .footer .container {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    margin-bottom: 2rem;
+  }
+
+  .footer__icons {
+    justify-content: flex-start;
+    margin-bottom: 2.6rem;
+  }
+
+  .footer__text {
     font-size: 1.4rem;
-    line-height: 1.8rem;
-    max-width: 44rem;
   }
 }
