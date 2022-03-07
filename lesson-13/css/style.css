@@ -318,6 +318,7 @@ body {
   padding-bottom: 12.1rem;
   color: #ffffff;
 }
+
 /* Header styles */
 
 .header {
@@ -364,6 +365,7 @@ body {
   width: 56.1rem;
   height: 51.1rem;
 }
+
 .hero__img img {
   width: 100%;
   height: 100%;
@@ -470,21 +472,16 @@ body {
   object-fit: contain;
 }
 
-/* .call__text {
-  margin-left: 7.3rem;
-} */
-
 .call__header {
   margin-bottom: 3.4rem;
   font-weight: bold;
   font-size: 3.6rem;
   line-height: 117%;
-  /* max-width: 50rem; */
 }
 
 .call__description {
+  max-width: 52.2rem;
   margin-bottom: 4.3rem;
-
   font-family: "Open Sans";
   font-size: 1.8rem;
   line-height: 156%;
@@ -494,9 +491,6 @@ body {
   background: #5540bf;
 }
 
-.call__link:hover {
-  border: 0.1rem solid #5540bf;
-}
 /* Online styles */
 
 .online {
@@ -594,9 +588,14 @@ body {
     background-color: #ffffff;
     cursor: pointer;
   }
+
+  .call__link:hover {
+    border: 0.1rem solid #5540bf;
+  }
 }
 
 /* Mobile */
+
 @media (max-width: 48em) {
   html {
     font-size: 10px;
@@ -608,7 +607,12 @@ body {
 
   .container {
     width: 100%;
-    padding: 0 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .header .container {
+    padding-right: 0;
   }
 
   .header {
@@ -646,6 +650,7 @@ body {
   .hero__buttons {
     flex-direction: column;
   }
+
   .hero__link {
     display: block;
     text-align: center;
@@ -658,6 +663,56 @@ body {
 
   .hero__subtext {
     line-height: 140%;
+  }
+
+  .call .container {
+    flex-direction: column;
+  }
+
+  .call__left {
+    left: 0;
+    margin-bottom: 5rem;
+  }
+
+  .call__img-big {
+    width: 100%;
+    height: auto;
+  }
+
+  .call {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .call__img-small {
+    width: 9.9rem;
+    height: 24.6rem;
+    right: -1rem;
+  }
+
+  .call__header {
+    font-size: 3rem;
+    line-height: 140%;
+  }
+
+  .call__link {
+    max-width: 100%;
+  }
+
+  .online .container {
+    flex-direction: column-reverse;
+    padding-top: 4rem;
+  }
+
+  .online__text {
+    padding-top: 6rem;
+    padding-right: 0;
+  }
+
+  .online__img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
   }
 
   .footer .container {
@@ -675,20 +730,5 @@ body {
 
   .footer__text {
     font-size: 1.4rem;
-  }
-
-  .online .container {
-    flex-direction: column-reverse;
-    padding-top: 4rem;
-  }
-
-  .online__text {
-    padding-top: 6rem;
-  }
-
-  .online__img {
-    width: 100%;
-    height: auto;
-    margin-top: 0;
   }
 }
