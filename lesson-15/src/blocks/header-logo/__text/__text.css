@@ -1,0 +1,13 @@
+.header-logo__text {
+  font-size: 1rem;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -0.5rem;
+  margin-left: -0.5rem;
+  letter-spacing: 0.1em;
+}
+
+.header-logo__text--color {
+  color: #959aae;
+}
