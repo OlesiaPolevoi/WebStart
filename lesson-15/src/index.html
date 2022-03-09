@@ -61,9 +61,18 @@
           </div>
           <div class="header__menu">
             <div class="header__navigation">
-              <button class="header__catalog">
-                <img src="img/header/burger.svg" alt="burger icon" />
-                <span>Каталог</span>
+              <button
+                class="
+                  menu
+                  header__catalog header__catalog--color header__catalog--size-m
+                "
+              >
+                <img
+                  class="menu__img"
+                  src="img/header/burger.svg"
+                  alt="burger icon"
+                />
+                <span class="menu__text">Каталог</span>
               </button>
               <nav class="header__nav">
                 <a href="#" class="header__link">О продукте</a>
@@ -77,19 +86,26 @@
                 <div class="header__gps">
                   <img src="img/header/gps.svg" alt="gps icon" />
                 </div>
-                <input type="text" list="country" />
+                <input
+                  class="header__country"
+                  type="text"
+                  list="country"
+                  placeholder="Москва"
+                />
                 <datalist id="country">
                   <option value="Москва"></option>
                   <option value="Новосибирск"></option>
                   <option value="Псков"></option>
                 </datalist>
               </div>
-              <div class="header-basket">
+              <div class="header-basket header-basket__wrap">
                 <div class="header-basket__img">
                   <img src="img/header/shopping.svg" alt="shopping cart icon" />
                 </div>
                 <span class="header-basket__text">Моя корзина</span>
-                <div class="header-basket__count">+1</div>
+                <div class="header-basket__count header-basket__count--size">
+                  +1
+                </div>
               </div>
             </div>
           </div>
