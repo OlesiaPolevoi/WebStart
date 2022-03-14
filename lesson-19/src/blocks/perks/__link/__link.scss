@@ -1,0 +1,6 @@
+.perks__link {
+  @include font(normal, 1.5rem, 150%);
+  text-align: center;
+  color: #959aae;
+  border-bottom: 0.1rem dashed #e7eaef;
+}

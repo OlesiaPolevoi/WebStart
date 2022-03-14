@@ -1,0 +1,11 @@
+.cart__coin-old {
+  @include font(700, 2rem, 140%);
+}
+
+@media (max-width: 48em) {
+  .cart__coin-new {
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 140%;
+  }
+}

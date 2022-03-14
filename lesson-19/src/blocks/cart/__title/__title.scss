@@ -1,0 +1,12 @@
+.cart__title {
+  @include font(400, 2rem, 130%);
+}
+
+@media (max-width: 48em) {
+  .cart__title {
+    max-width: 13.9rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 130%;
+  }
+}

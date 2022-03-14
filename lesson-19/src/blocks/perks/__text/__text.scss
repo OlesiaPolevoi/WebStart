@@ -1,0 +1,21 @@
+.perks__text {
+  @include font(300, 2.2rem, 150%);
+  text-align: center;
+  padding-top: 1.8rem;
+}
+
+.perks__text--wide {
+  max-width: 60rem;
+}
+
+@media (max-width: 48em) {
+  .perks__text {
+    @include font(600, 1.4rem, 150%);
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .perks__text--wide {
+    max-width: 30rem;
+  }
+} ;
