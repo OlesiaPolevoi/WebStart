@@ -1,0 +1,13 @@
+.button__more {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 130%;
+  color: #191e32;
+  background-color: #f3f4f7;
+}
+
+@media (max-width: 48em) {
+  .button__more {
+    font-size: 1.6rem;
+  }
+}
